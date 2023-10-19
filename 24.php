@@ -7,17 +7,18 @@
 </head>
 <body>
 <?php
-    $k=15;
     for($i=1;$i<=5;$i++)
     {
-        for($j=1;$j<=$i;$j++)
+        $a=4;
+        $n=$i;
+        for($j=$i;$j>=1;$j--)
         {
-            echo"$k ";
-            $k--;
+            echo"$n ";
+            $n=$n+$a;
+            $a--;
         }
         echo"<br>";
     }
     ?>
-    
 </body>
 </html>

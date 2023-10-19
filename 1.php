@@ -3,27 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Day1</title>
 </head>
 <body>
     <?php
-    $arr=array(1,2,3,4,5);
-    $j=0;
-    $rev_val=[];
-    for($i=count($arr)-1;$i>=0;$i--)
-    {
-        $rev_val[$j]=$arr[$i];
-        $j++;
-        
-    }
-    for($i=0;$i<count($arr);$i++)
-    {
-        echo $rev_val[$i];
-        
-    }
+        $n=5;
+        for($i=1;$i<=$n;$i++)
+        {
+            for($j=1;$j<=$n;$j++)
+            {
+                echo"* ";
 
+            }
+            echo"<br>";
+        }
+     ?>   
 
-    ?>
-    
 </body>
 </html>

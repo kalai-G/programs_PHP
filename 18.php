@@ -7,16 +7,28 @@
 </head>
 <body>
     <?php
-    for($i=1;$i<=5;$i++)
+    for($i=1;$i<=4;$i++)
     {
-       
+        $c=1;
+        for($j=4;$j>=$i;$j--)
+        {
+            echo"$c";
+            $c++;
+        }
         for($j=1;$j<=$i-1;$j++)
         {
-            echo"&nbsp;&nbsp;&nbsp";
+            echo"*";
+            
         }
-        for($j=$i;$j<=5;$j++)
+        for($j=1;$j<=$i-1;$j++)
         {
-            echo"* ";
+            echo"*";
+            
+        }
+        for($j=(5-$i);$j>=1;$j--)
+        {
+            echo"$j";
+            
         }
         echo"<br>";
     }

@@ -7,22 +7,17 @@
 </head>
 <body>
     <?php
-$arr1=array(1,2,3,4,5);
-    $arr2=array(3,4,5,6,7);
-    for($i=0;$i<count($arr1);$i++)
+    $k=1;
+    for($i=1;$i<=5;$i++)
     {
-        for($j=0;$j<count($arr1);$j++)
+        for($j=1;$j<=$i;$j++)
         {
-            if($arr1[$i]==$arr2[$j])
-            {
-                echo $arr1[$i];
-                echo"<br>";
-            }
-        
+            echo"$k ";
+            $k++;
         }
+        echo"<br>";
     }
     ?>
-
     
 </body>
 </html>

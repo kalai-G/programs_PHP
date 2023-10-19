@@ -7,26 +7,14 @@
 </head>
 <body>
     <?php
-    $arr=array(10,5,8,20,15);
-     $temp=0;
-    for($i=0;$i<count($arr);$i++)
+    for($i=1;$i<=5;$i++)
     {
-        for($j=$i+1;$j<count($arr);$j++)
+        for($j=$i;$j<=5;$j++)
         {
-        
-            if($arr[$i]>$arr[$j])
-            {
-                $temp = $arr[$i];
-                $arr[$i] = $arr[$j];
-                $arr[$j] = $temp;
-            
+            echo"*";
         }
+        echo"<br>";
     }
-    
-    }
-    $c=count($arr)-2;
-    echo $arr[$c];
-
     ?>
     
 </body>

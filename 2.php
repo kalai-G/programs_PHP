@@ -7,27 +7,15 @@
 </head>
 <body>
     <?php
-    $arr=array(1,2,2,3,4,4,5);
-    for($i=0;$i<count($arr);$i++)
+    for($i=1;$i<=5;$i++)
     {
-        for($j=$i+1;$j<count($arr);$j++)
+        for($j=1;$j<=$i;$j++)
         {
-            if($arr[$i]==$arr[$j])
-            {
-                $arr[$j]="";
-                
-            }
-            
+            echo"* ";
         }
+        echo"<br>";
     }
-   for($i=0;$i<count($arr);$i++)
-   {
-    echo $arr[$i];
-   }
-       
-
-
-
     ?>
+    
 </body>
 </html>

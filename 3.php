@@ -7,15 +7,18 @@
 </head>
 <body>
     <?php
-    $arr=array(10,20,30,40,50);
-    $sum=0;
-    $count=count($arr);
-    for($i=0;$i<$count;$i++)
+    for($i=1;$i<=5;$i++)
     {
-        $sum=$sum+$arr[$i];
-     }
-     $average=$sum/$count;
-     echo" $average";
+        for($j=1;$j<=(5-$i);$j++)
+        {
+            echo"&nbsp;&nbsp;&nbsp";
+        }
+        for($j=1;$j<=$i;$j++)
+        {
+            echo"* ";
+        }
+        echo"<br>";
+    }
     ?>
     
 </body>

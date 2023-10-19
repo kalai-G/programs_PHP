@@ -6,17 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    $student_scores=[array("Alice",95),array("Bob",82),array("eve",88)];
-    $sum=0;
-    $count=count($student_scores);
-    foreach($student_scores as $arr)
+<?php
+
+    for($i=1;$i<=5;$i++)
     {
-        $sum=$sum+$arr[1];
-     }
-     $average=$sum/$count;
-     echo" $average";
-    
+        for($j=$i;$j<=5;$j++)
+        {
+            echo"&nbsp";
+            
+        }
+        for($j=1;$j<=$i;$j++)
+        {
+            echo"$i ";
+            
+        }
+        echo"<br>";
+    }
     ?>
     
 </body>

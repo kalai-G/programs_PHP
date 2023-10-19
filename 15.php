@@ -6,16 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-    $k=15;
-    for($i=1;$i<=5;$i++)
+    <?php
+   // $count=1;
+    for($i=4;$i>=1;$i--)
     {
-        for($j=1;$j<=$i;$j++)
+        
+        for($j=1;$j<=($i*2)-1;$j++)
         {
-            echo"$k ";
-            $k--;
+            echo"$j";
+            
+            
         }
+      //  $count=$count+2;
         echo"<br>";
+
     }
     ?>
     

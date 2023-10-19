@@ -7,24 +7,49 @@
 </head>
 <body>
     <?php
-    $arr1=array(1,2,3,4,5);
-    $arr2=array(7,2,9,12,15);
-    for($i=0;$i<count($arr2);$i++)
+    for($i=1;$i<=5;$i++)
     {
-        for($j=$i+1;$j<count($arr2);$j++)
+        //$k=5;
+        for($j=1;$j<=5-$i;$j++)
         {
-            if($arr2[$i]<$arr2[$j])
-            {
-                break;
-            }
-            else
-            {
-                echo"Not sorted";
-            }
+            echo"&nbsp;&nbsp;&nbsp";
         }
-    }
-    ?>
+     //   if($i<6)
+        
+            for($j=1;$j<=$i;$j++)
+           {
+               echo"* ";
+            }
+            echo"<br>";
+        }
 
+        
+        /*else{
+            for($j=1;$j<=$i-$k;$j++)
+            {
+               echo"&nbsp;&nbsp";
+            }
+            for($j=1;$j<=$k-$j;$j++)
+            {
+               echo"*";
+             }
+        }*/
+        for($i=1;$i<=5;$i++)
+    {
+       
+        for($j=1;$j<=$i-1;$j++)
+        {
+            echo"&nbsp;&nbsp;&nbsp";
+        }
+        for($j=$i;$j<=5;$j++)
+        {
+            echo"* ";
+        }
+        echo"<br>";
+    }
+
+        
+    ?>
     
 </body>
 </html>
